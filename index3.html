@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="sách, đặt sách online, giao miễn phí, book, sách giao miễn phí">
+    <meta name="description" content="book - Đặt sách online và nhận giao miễn phí trong ngày. Chúng tôi cung cấp dịch vụ đặt và giao sách chất lượng cao, đảm bảo mang đến sự hài lòng cho bạn.">
+    <title>Book | Đặt Sách Online, Giao Miễn Phí trong ngày</title>
+    <link rel="stylesheet" href="./CSS/index3.css">
+    <link rel="shortcut icon" href="./Media/Icon.PNG">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="./JS/jquery.js"></script>
+    <script src="./JS/index.js"></script>
+    
+</head>
+
+<body>
+    <div class="loadCart">
+        <div>
+            <img src="./Media/Icon.PNG" alt="Logo">
+        </div>
+    </div>
+    <header class="flex">
+        <div class="banner">
+            <a href="index.html"><img src="./Media/Banner.png" alt="Banner"></a>
+        </div>
+        <nav class="flex between">
+            <div class="bar closed">
+                <ul class="flex menu">
+                    <li><a href="#" id="none"><i class="fa-solid fa-bars"></i></a></li>
+                </ul>
+            </div>
+            <div>
+                <ul class="flex menu left">
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="#foot">Giới thiệu</a></li>
+                    <li class="sub closed"><a href="#" id="none">Sản phẩm</a>
+                        <ul class="menu flex submenu">
+                            <li><a href="index2.html">Best Sellers</a></li>
+                            <li><a href="index2.html">Bí ẩn</a></li>
+                            <li><a href="index2.html">Giả tưởng và khoa học viễn tưởng</a></li>
+                            <li><a href="index2.html">Hành động</a></li>
+                            <li><a href="index2.html">Tình cảm</a></li>
+                            <li><a href="index2.html">Lịch sử</a></li>
+                        </ul>
+                    </li>
+                    <li class="sub closed"><a href="#" id="none">Dịch vụ</a>
+                        <ul class="menu flex submenu">
+                            <li><a href="#foot">Thiết kế riêng</a></li>
+                            <li><a href="#foot">Số lượng lớn</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#foot">Liên hệ</a></li>
+                </ul>
+            </div>
+            <div class="flex">
+                <ul class="flex menu">
+                    <li><a href="index3.html"><i class="fa-solid fa-cart-shopping"></i></a></li>  
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <h1 class="fix">Book | Đặt Sách Online, Giao Miễn Phí Trong Ngày | Hotline: 10101010</h1>
+    
+    <main class="flex between">
+        <div class = "left box">
+            <h2>HÓA ĐƠN</h2>
+            <div class="pdec">
+                <div class = "p_dec">
+                    <div class="row flex between">
+                        <div>GIỎ HÀNG</div>
+                        <div>THÀNH GIÁ</div>
+                    </div>
+                    <div class="row" id="cart"></div>
+                    <div class="row flex between sum"></div>
+                </div>
+            </div>
+            <div class="bank">
+                <input type="radio" name = "paid" value = ""> Chuyển khoản ngân hàng
+                <p>[ Sau khi bạn hoàn tất thông tin và bấm đặt hàng, chúng tôi sẽ liên hệ bạn để xác nhận và cùng cấp cách thức chuyển khoản ]</p>
+            </div>
+            <div class="cod">
+                <input type="radio" name = "paid" value = ""> Thanh toán bằng tiền mặt
+            </div>
+            <div class = "accept">
+                Dữ liệu các nhân được sử dụng để xử lý đơn đặt hàng
+                hỗ trợ trải nghiệm của bạn trên toàn bộ trang web này. 
+                Bằng cách bấm Đặt Hàng bạn đã đồng ý các điều khoản tại
+                <a href="index1.html">chính sách riêng tư</a>.
+            </div>
+            <div>
+                <input type="checkbox" name = "check" value = ""> Tôi đã đọc kỹ
+                <a href="index1.html">điều khoản và điều kiện</a> của website.
+            </div>
+            <div>
+                <button type="button">ĐẶT HÀNG</button>
+            </div>
+        </div>
+        <div class = "right box">
+            <h2>THÔNG TIN KHÁCH HÀNG</h2>
+            <ul>
+                <li class = "flex">
+                    <div>Tên người nhận</div>
+                    <input type="text" placeholder="Vui lòng nhập họ tên">
+                </li>
+                <li class = "flex">
+                    <div>Email</div>
+                    <input type="email" placeholder="Vui lòng nhập email">
+                </li>
+                <li class = "flex">
+                    <div>Số điện thoại</div>
+                    <input type="number" placeholder="Vui lòng nhập số điện thoại người nhận">
+                </li>
+                <li class = "flex">
+                    <div>Địa chỉ chi tiết</div>
+                    <input type="text" placeholder="Vui lòng nhập địa chỉ nhận hàng">
+                </li>
+                <li class = "flex">
+                    <div>Ghi chú</div>
+                    <input type="text" placeholder="(Không bắt buộc)">
+                </li>
+            </ul>
+        </div>
+    </main>
+
+    <footer class="flex" id="foot">
+        <div class="box description">
+            <div>
+                <a href="index.html"><img src="./Media/Footer.png" alt="Footer"></a>
+            </div>
+            <h4>Dòng chảy của hoa &#127804</h4>
+            <h5>Flowover - trang web bán hoa tươi trực tuyến uy tín và hiện đại. Bạn sẽ tìm thấy những bó hoa thơm ngát và tinh tế dành tặng cho những người thân yêu. Đội ngũ chăm sóc khách hàng tận tâm, đảm bảo trải nghiệm mua sắm dễ dàng và tiện lợi. Hãy khám phá Flowover ngay và lan tỏa niềm vui qua từng bông hoa tươi tinh khôi!</h5>
+            <h4>FLOWOVER &copy; SINCE 2023</h4>
+        </div>
+        <div class="box fm">
+            <div class="services">
+                <div>            
+                    <h5 class="default">Thiết kế mới - Vẻ đẹp riêng</h5>
+                    <h6>Những đóa hoa bình thường không phải "gu" của bạn, ngại gì không đến Flowover?! Nhận đặt hoa theo sở thích của khách hàng dù chỉ là 1 bó. Khách "iu" chỉ việc chọn hoa và màu sắc giấy gói theo concept mong muốn, cả thế giới còn lại để Flowover lo.</h6>
+                </div>
+                <div>
+                    <h5 class="default">Số lượng lớn - Cần là có</h5>
+                    <h6>Tiệc lớn cần nhiều hoa? Hãy đến Flowover! Nhận đặt hoa số lượng lớn kèm nhiều ưu đãi hấp dẫn. Đặc biệt, đặt càng SỚM - ưu đãi càng NHIỀU.</h6>
+                </div>
+            </div>
+            <a href="index1.html">
+                <div class="policy flex between">
+                    <div>
+                        <h5>Chính sách đổi trả</h5>
+                    </div>
+                    <div>
+                        <h5>Chính sách bảo mật</h5>
+                    </div>
+                    <div>
+                        <h5>Chính sách vận chuyển</h5>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="box contact">
+            <h4>Hotline</h4>
+            <h5><a href="tel:10101010">10101010 (miền Bắc)</a></h5>
+            <h5><a href="tel:0764512291">0764512291 (miền Nam)</a></h5>
+            <h4>Email</h4>
+            <h5><a href="mailto:book@gmail.com">book@gmail.com</a></h5>
+            <h5><a href="mailto:shopbansach@gmail.com">shopbansach@gmail.com</a></h5>
+            <h4>Địa chỉ</h4>
+            <h5><a href="https://maps.app.goo.gl/bAPURQtJM4yfvTLo6" target="_blank">273 An Dương Vương, phường 3, quận 5, TP.HCM</a></h5>
+        </div>
+    </footer>
+</body>
+</html>
+
