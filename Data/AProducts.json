@@ -1,1 +1,217 @@
-
+[{
+    "i": "./Media/hm2.jpg",
+    "name": "Rừng Na Uy",
+    "author":"Haruki Murakami",
+    "rating":"5.0",
+    "price": "2.700.000"
+},{
+    "i": "./Media/hh5.jpg",
+    "name": "Harry Potter Và Chiếc Cốc Lửa",
+    "author":"J.K. Rowling",
+    "rating":"5.0",
+    "price": "2.000.000"
+},{
+    "i": "./Media/hh2.jpg",
+    "name": "Harry Potter Và Tên Tù Nhân Ngục Azkaban",
+    "author":"J.K. Rowling",
+    "rating":"5.0",
+    "price": "3.000.000"
+},{
+    "i": "./Media/hg2.jpg",
+    "name": "Vị Thần Cuối Cùng",
+    "author":"Rick Riordan",
+    "rating":"5.0",
+    "price": "2.000.000"
+},{
+    "i": "./Media/hh3.jpg",
+    "name": "Harry Potter Và Hòn Đá Phù Thủy",
+    "author":"J.K. Rowling",
+    "rating":"5.0",
+    "price": "1.500.000"
+},{
+    "i": "./Media/bs3.jpg",
+    "name": "Hoàng Tử Bé",
+    "author":"Antoine de Saint-Exupéry",
+    "rating":"5.0",
+    "price": "1.800.000"
+},{
+    "i": "./Media/cb1.jpg",
+    "name": "John Adams",
+    "author":"David McCullough",
+    "rating":"5.0",
+    "price": "3.200.000"
+},{
+    "i": "./Media/hh2.jpg",
+    "name": "Harry Potter Và Tên Tù Nhân Ngục Azkaban",
+    "author":"J.K. Rowling",
+    "rating":"5.0",
+    "price": "3.000.000"
+},{
+    "i": "./Media/hg2.jpg",
+    "name": "Vị Thần Cuối Cùng",
+    "author":"Rick Riordan",
+    "rating":"5.0",
+    "price": "2.000.000"
+},{
+    "i": "./Media/hh3.jpg",
+    "name": "Harry Potter Và Hòn Đá Phù Thủy",
+    "author":"J.K. Rowling",
+    "rating":"5.0",
+    "price": "1.500.000"
+},{
+    "i": "./Media/bs2.jpg",
+    "name": "Chúa Tể Của Những Chiếc Nhẫn",
+    "author":"J.R.R. Tolkien",
+    "rating":"5.0",
+    "price": "1.700.000"
+},{
+    "i": "./Media/hb2.jpg",
+    "name": "Và Rồi Chẳng Còn Ai",
+    "author":"Agatha Christie",
+    "rating":"5.0",
+    "price": "2.500.000"
+},{   
+    "i": "./Media/hm4.jpg",
+    "name": "Cuốn Theo Chiều Gió",
+    "author":"Margaret Mitchell",
+    "rating":"5.0",
+    "price": "2.500.000"
+},{ 
+    "i": "./Media/hh5.jpg",
+    "name": "Harry Potter Và Chiếc Cốc Lửa",
+    "author":"J.K. Rowling",
+    "rating":"5.0",
+    "price": "2.000.000"
+},{
+    "i": "./Media/hh1.jpg",
+    "name": "Trò Chơi Vương Quyền",
+    "author":"George R.R. Martin",
+    "rating":"5.0",
+    "price": "1.250.000"
+},{
+    "i": "./Media/hg3.jpg",
+    "name": "Dị Biệt",
+    "author":"Veronica Roth",
+    "rating":"5.0",
+    "price": "1.500.000"
+},{
+    "i": "./Media/cb2.jpg",
+    "name": "Sự Trỗi Dậy Và Suy Tàn Của Đế Chế Thứ Ba – Lịch Sử Đức Quốc Xã",
+    "author":"William L. Shirer",
+    "rating":"5.0",
+    "price": "3.200.000"
+},{   
+    "i": "./Media/hm1.jpg",
+    "name": "Trà Hoa Nữ",
+    "author":"Alexandre Dumas",
+    "rating":"5.0",
+    "price": "6.400.000"
+},{ 
+    "i": "./Media/hm5.jpg",
+    "name": "Cô gái năm ấy chúng ta cùng theo đuổi",
+    "author":"Cửu Bả Đao",
+    "rating":"5.0",
+    "price": "2.000.000"
+},{
+    "i": "./Media/hh1.jpg",
+    "name": "Trò Chơi Vương Quyền",
+    "author":"George R.R. Martin",
+    "rating":"5.0",
+    "price": "1.250.000"
+},{
+    "i": "./Media/hg1.jpg",
+    "name": "Giải Mã Mê Cung",
+    "author":"James Dashner",
+    "rating":"5.0",
+    "price": "5.000.000"
+},{
+    "i": "./Media/hb3.jpg",
+    "name": "Thiên Thần & Ác Quỷ",
+    "author":"Dan Brown",
+    "rating":"5.0",
+    "price": "900.000"
+},{   
+    "i": "./Media/bs1.jpg",
+    "name": "Chuyện Hai Thành Phố",
+    "author":"Charles Dickens",
+    "rating":"5.0",
+    "price": "3.000.000"
+},{ 
+    "i": "./Media/hb1.jpg",
+    "name": "Cô Gái Có Hình Xăm Rồng",
+    "author":"Stieg Larsson",
+    "rating":"5.0",
+    "price": "5.500.000"
+},{
+    "i": "./Media/bs5.jpg",
+    "name": "Hồng Lâu Mộng",
+    "author":"Tào Tuyết Cần",
+    "rating":"5.0",
+    "price": "5.000.000"
+},{
+    "i": "./Media/cb3.jpg",
+    "name": "1776",
+    "author":"David McCullough",
+    "rating":"5.0",
+    "price": "3.200.000"
+},{
+    "i": "./Media/hh4.jpg",
+    "name": "Harry Potter Và Bảo Bối Tử Thần",
+    "author":"J.K. Rowling",
+    "rating":"5.0",
+    "price": "5.000.000"
+},{
+    "i": "./Media/hg5.jpg",
+    "name": "Đấu Trường Sinh Tử",
+    "author":"Suzanne Collins",
+    "rating":"5.0",
+    "price": "720.000"
+},{
+    "i": "./Media/hb5.jpg",
+    "name": "Bố Già",
+    "author":"Mario Puzo",
+    "rating":"5.0",
+    "price": "800.000"
+},{
+    "i": "./Media/hm3.jpg",
+    "name": "Đàn Ông Sao Hỏa, Đàn Bà Sao Kim",
+    "author":"John Gray",
+    "rating":"5.0",
+    "price": "4.500.000"
+},{
+    "i": "./Media/cb4.jpg",
+    "name": "Sapiens: Lược Sử Loài Người",
+    "author":"Yuval Noah Harari",
+    "rating":"5.0",
+    "price": "3.200.000"
+},{
+    "i": "./Media/hh4.jpg",
+    "name": "Harry Potter Và Bảo Bối Tử Thần",
+    "author":"J.K. Rowling",
+    "rating":"5.0",
+    "price": "5.000.000"
+},{
+    "i": "./Media/hg4.jpg",
+    "name": "Bắt Lửa",
+    "author":"Suzanne Collins",
+    "rating":"5.0",
+    "price": "5.000.000"
+},{
+    "i": "./Media/cb5.jpg",
+    "name": "Lược Sử Thế Giới",
+    "author":"E.H. Gombrich",
+    "rating":"5.0",
+    "price": "3.200.000"
+},{
+    "i": "./Media/bs4.jpg",
+    "name": "Người Hobbit",
+    "author":"J.R.R. Tolkien",
+    "rating":"5.0",
+    "price": "5.500.000"
+},{
+    "i": "./Media/hb4.jpg",
+    "name": "Rebecca",
+    "author":"Daphne du Maurier",
+    "rating":"5.0",
+    "price": "1.000.000"
+}]
