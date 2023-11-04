@@ -1,0 +1,397 @@
+/*ANIMATION*/
+@keyframes h1a {
+    0% {padding-right: 0;}
+    2.5% {padding-right: 1.5rem;}
+    5% {padding-right: 0;}
+    7.5% {padding-right: 1.5rem;}
+    10% {padding-right: 0;}
+}
+
+/*TOAN CUC*/
+body {
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to bottom right, #6088a2, #3c5682, #6088a2);
+    margin: 0;
+}
+.flex {
+    display: flex;
+}
+img, video {
+    width: 100%;
+}
+.between {
+    justify-content: space-between;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;  
+    color: black;
+}
+.box {
+    box-sizing: border-box;
+}
+.default {
+    cursor: default;
+}
+.fix {
+    text-align: center;
+    margin: 1% auto;
+}
+
+/*HEADING*/
+h1 {
+    color: white;
+    font-size: 100%;
+    margin-top: 5.5% !important;
+    animation: h1a 5s infinite;
+}
+h4 {
+    margin: 2% 0;
+    color: #3c3d82;
+    cursor: default;
+}
+h5,h6 {
+    margin: 1% auto;
+    text-align: justify;
+    color: black;
+}
+
+/*HEADER*/
+header {
+    background-color: #fde1d3;
+    align-items: center;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    z-index: 5;
+}
+div.banner {   
+    width: 20%;
+}
+nav {
+    width: 80%;
+}
+nav > div:first-child {
+    display: none;
+}
+
+/*MENU*/
+ul.menu li > a {
+    display: block;
+    padding: 1rem;
+}
+ul.left > li > a::after {
+    display: block;
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: brown;
+    margin: auto;
+    transition: 1s;
+}
+ul.left > li > a:hover::after {
+    width: 100%;
+}
+
+/*SUBMENU*/
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #fde1d3;
+}
+.submenu > li:hover {
+    transform: scale(1.07);
+}
+
+/*MAIN*/
+main {
+    width: 80%;
+    margin: 2rem auto;
+}
+main > section {
+    position: relative;
+    background-color: #ffd6a0;
+    border-radius: .5rem;
+    padding: 2rem 6rem;
+    margin: 2% 0 3%;
+}
+main > section::before {
+    content: "";
+    padding: 1%;
+    left: 29.23%;
+    top: 1%;
+    position: absolute;
+    background-color: #d96c4e;
+    border-radius: 1rem;
+}
+main > section::after {
+    content: "";
+    padding: 1%;
+    right: 29.23%;
+    top: 1%;
+    position: absolute;
+    background-color: #d96c4e;
+    border-radius: 1rem;
+}
+h2 {
+    width: 50%;
+    color: brown;
+    background-color: #ffd6a0;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    position: relative;
+}
+h2::before {
+    content: "";
+    padding: 2%;
+    left: 11.3%;
+    bottom: 10%;
+    position: absolute;
+    background-color: #d96c4e;
+    border-radius: 1rem;
+}
+h2::after {
+    content: "";
+    padding: 2%;
+    right: 11.3%;
+    bottom: 10%;
+    position: absolute;
+    background-color: #d96c4e;
+    border-radius: 1rem;
+}
+main > div {
+    position: relative;
+    padding: .5%
+}
+main > div::before {
+    content: "";
+    background-color: #d96c4e;
+    padding: 4% .5%;
+    left: 29.65%;
+    top: -300%;
+    position: absolute;
+    z-index: 2;
+}
+main > div::after {
+    content: "";
+    background-color: #d96c4e;
+    padding: 4% .5%;
+    right: 29.65%;
+    top: -300%;
+    position: absolute;
+    z-index: 2;
+}
+main h3 {
+    cursor: default;
+    color: brown;
+}
+main h4 {
+    color: black;
+    font-weight: normal;
+}
+main h5 {
+    font-size: 90%;
+}
+main a {
+    font-weight: bold;
+    color: #3c3d82;
+}
+
+/*FOOTER*/
+footer {
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #fde1d3;
+}
+footer > div {
+    width: 30%;
+    padding: 1%;
+}
+footer a:hover {
+    color: #d96c4e;
+}
+
+/*DESCRIPTION*/
+.description > div {
+    width: 50%;
+}
+.description h5 {
+    font-weight: normal;
+}
+
+/*FM*/
+.fm > div {
+    margin-bottom: 5%;
+}
+.fm h4 {
+    font-size: 90%;
+}
+.fm h5 {
+    color: #3c3d82;
+}
+.fm h6 {
+    font-size: 80%;
+    font-weight: normal;
+}
+
+@media screen and (max-width: 950px) {
+    h1 {
+        font-size: 2vw;
+        margin-top: 8vw !important;
+    }
+    .policy {
+        flex-wrap: wrap;
+    }
+    .policy > div {
+        width: 100%;
+    }
+    nav {
+    width: 80%;
+    }
+        /*MAIN*/
+main {
+    margin: 1rem auto;
+}
+main > section {
+    font-size: 2vw;
+    padding: 1rem 2rem;
+}
+main > section::before {
+    display: none;
+}
+main > section::after {
+    display: none;
+}
+h2 {
+    font-size: 3vw;
+    padding: 1rem;
+}
+h2::before {
+    display: none;
+}
+h2::after {
+    display: none;
+}
+main > div::before {
+    display: none;
+}
+main > div::after {
+    display: none;
+}
+}
+@media screen and (max-width: 450px) {
+    body {
+        font-size: 4.1vw;
+    }
+    /*HEADER*/
+    .banner {
+        display:none;
+    }
+    nav {
+        width: 100%;
+    }
+    nav > div:first-child {
+        display: block;
+    }
+    ul.left {
+        display: none;
+        left: 0;
+        top: 40px;
+        position: absolute;
+        width: 100%;
+        background-color: #fde1d3;
+    }
+    header {
+        width: 100%;
+    }
+    ul.left > li > a::after {
+        display: none;
+    }
+    /*MAIN*/
+    main > div > section {
+        flex-wrap: wrap;
+    }
+main {
+    width: 90%;
+    margin: 1rem auto;
+}
+main > section {
+    font-size: 3vw;
+    padding: 1rem 2rem;
+}
+main > section::before {
+    display: none;
+}
+main > section::after {
+    display: none;
+}
+h2 {
+    font-size: 4vw;
+    width: 70%;
+    color: brown;
+    padding: 1rem;
+}
+h2::before {
+    display: none;
+}
+h2::after {
+    display: none;
+}
+main > div::before {
+    display: none;
+}
+main > div::after {
+    display: none;
+}
+    /*FOOTER*/
+    footer {
+        padding: 5%;
+        flex-wrap: wrap;
+    }
+    footer > div {
+        width: 100%;
+    }
+    .description > div {
+        margin: auto;
+    }
+    .policy {
+        flex-wrap: wrap;
+    }
+    .policy > div {
+        width: 100%;
+    }
+    .description > h4 {
+        text-align: center;
+    }
+    /*LINE*/
+    h1 {
+        font-size: 2vw;
+        color: white;
+        margin-top: 16% !important;
+        animation: h1a 5s infinite;
+    }
+    /*SUBMENU*/
+    .sub {
+        position: relative;
+    }
+    li.sub::before {
+        content: "";
+        position: absolute;
+        border-width: 2vw;
+        border-style: solid;
+        border-color: black transparent transparent transparent;
+        top: 25px;
+        right: 16px;
+    }
+    .submenu {
+        position: relative;
+    }
+    .submenu > li > a {
+        padding-left: 3rem !important;
+    } 
+}

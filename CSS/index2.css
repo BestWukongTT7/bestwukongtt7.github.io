@@ -6,13 +6,6 @@
     7.5% {padding-right: 1.5rem;}
     10% {padding-right: 0;}
 }
-@keyframes h2a {
-    0% {width: 30%;}
-    5% {width: 35%;}
-    10% {width: 30%;}
-    15% {width: 35%;}
-    20% {width: 30%;}
-}
 @keyframes carta {
     0% {transform: rotate(5deg);}
     5% {transform: rotate(-5deg);}
@@ -20,6 +13,17 @@
     15% {transform: rotate(-5deg);}
     20% {transform: rotate(5deg);}
     25% {transform: none;}
+}
+@keyframes ina {
+    0% {
+        transform: translateX(50%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+.ina {
+    animation: ina 1s;
 }
 
 /*TOAN CUC*/
@@ -62,20 +66,9 @@ input {
     border: none;
     outline: none;
 }
-
-/*ONLOAD*/
-.loadWeb {
-    position: fixed;
-    background-color: #fde1d3;
-    z-index: 999999999;
-    width: 100%;
-    height: 100%;
-    top:0;
-}
-.loadWeb > div {
-    width: 50%;
-    text-align: center;
-    margin: 20% auto;
+.decor {
+    border-radius: .5rem .5rem 0 0;
+    box-shadow: 0 0 .5rem #3c3d82;
 }
 
 /*HEADING*/
@@ -115,6 +108,44 @@ nav > div:first-child {
     display: none;
 }
 
+/*TIM KIEM*/
+div.find {
+    width: 300px;
+    border-radius: .5rem;
+    background-color: transparent;
+    position: relative;
+}
+.inform {
+    top: 125%;
+    left: 0;
+    padding: 5% 0;
+    width: 80%;
+    text-align: center;
+    position: absolute;
+}
+#find {
+    border-radius: .5rem 0 0 .5rem;
+    width: 90%;
+    padding: 5%;
+    transform: translateX(150%);
+}
+div.find > i {
+    cursor: pointer;
+    width: 10%;
+    padding: 6%;
+    text-align: center;
+    background-color: transparent;
+}
+div.find > i:hover {
+    color: brown;
+}
+#find.findin {
+    width: 90%;
+    padding: 5%;
+    transition: .5s;
+    transform: translateX(0);
+}
+
 /*MENU*/
 ul.menu li > a {
     display: block;
@@ -143,91 +174,101 @@ ul.left > li > a:hover::after {
     transform: scale(1.07);
 }
 
-/*SLIDESHOW*/
-.slides {
-    position: relative;
-}
-.slides > i {
-    display: block;
-    background-color: rgba(255, 255, 255, 0.4);
-    color: #fde1d3;
-    position: absolute;
-    height: -webkit-fill-available;
-    top: 0;
-    padding: 25% 1% 25% 1%;
-}
-.slides > i:hover {
-    background-color: rgba(255, 255, 255, 0.7);
-    color: #f2c894;
-}
-.fa-caret-left {
-    left: 0;
-}
-.fa-caret-right {
-    right: 0;
-}
-
-/*ADS*/
-.ads {
-    width: 90%;
-    margin: 1% auto;
-}
-.ads > div {
-    width: 50%;
-}
-.ad > div {
-    background-color: #f2c894;
-    width: 50%;
-}
-.ad > div:first-child {
-    position: relative;
-}
-#clock {
-    font-size: small;
-    font-weight: bold;
-    padding: 2%;
-    background-color: #fde1d3;
-    color: brown;
-    position: absolute;
-    border-radius: 0.5rem;
-    bottom: 5%;
-    left: 7.5%;
-}
-
 /*MAIN*/
 main {
     width: 90%;
-    margin: auto;
+    margin: 2% auto;
 }
-main > div {
+div.left {
+    width: 15%;
+}
+div.right {
+    width: 82%;
+    background: linear-gradient(to left,#ffd6a0,#ffbf6b, #ffbf6b);
+    padding: 2%;
     overflow: hidden;
 }
-.more {
-    padding: 1rem 2rem;
-    width: 20%;
-    margin: 2% auto;
-    display: block;
-    color: brown;
-    background-color: #fde1d3;
+
+/*LEFT*/
+div.left > ul {
+    overflow: hidden;
+}
+div.left li > a {
+    background: linear-gradient(to right,#ffd6a0,#ffc88e,#ffbf6b);
+    border-bottom: .1rem solid #ffc88e;
+    padding: 1rem 2.5rem;
+    transition: .5s;
+}
+div.left li:last-child > a {
+    border: none;
+}
+div.left li:hover > a {
+    background: brown;
+    color: white;
+    padding-left: 3.5rem;
+}
+div.left li:first-child::before {
+    content: "BEST Sellers";
+    position: absolute;
+    font-size: .6rem;
     font-weight: bold;
-    border-radius: .3rem;
+    text-align: center;
+    transform: rotate(5deg);
+    color: brown;
+    width: 20%;
+    top: 100%;
+    right: 4%;
+    z-index: 1;
+}
+div.left li:first-child::after {
+    content: "";
+    position: absolute;
+    top: 90%;
+    right: 5%;
+    box-shadow: .15rem -.15rem .15rem brown;
+    border-style: solid;
+    border-width: 2.2rem 1.3rem .5rem 1.3rem;
+    border-color: rgb(255, 241, 113) rgb(255, 241, 113) transparent rgb(255, 241, 113);
+}
+div.left li:first-child {
+    background-color: #d96c4e;
+    color: white;
+    padding: 10%;
+    font-weight: bold;
+    position: relative;
+}
+
+/*FILTER*/
+.filter {
+    width: 100%;
+    margin-top: 10%;
+}
+.filter > a {
+    display: block;
+    padding: 5%;
+    text-align: center;
+    background: linear-gradient(to right,#ffd6a0,#ffc88e,#ffbf6b);
+    border-bottom: .1rem solid #ffc88e;
 }
 
 /*PRODUCTS*/
-h2 {
-    background-color: #fde1d3;
-    color: #d96c4e;
-    box-shadow: 0 .25rem #d96c4e;
-    width: 30%;
-    padding: .5rem;
-    border-radius: .5rem;
-    margin: 2% auto !important;
-    animation: h2a 5s infinite;
+div.items {
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+div.items:last-child {
+    justify-content: flex-start;
+}
+div.items:last-child > .item {
+    margin: 1%;
 }
 .item {
-    width: 19%;
-    background-color: #ffd6a0;
-    border: .1rem solid #ffd6a0;
+    border-radius: .3rem;
+    overflow: hidden;
+    width: 22%;
+    background-color: #ffc88e;
+    margin: 1% 0 2% 0;
     transition: .3s;
 }
 .item > div {
@@ -237,10 +278,30 @@ h2 {
     transition: transform .3s;
 }
 .item:hover {
-    margin-top: -1%;
+    margin-top: 0;
 }
 .item:hover img {
     transform: scale(1.1);
+}
+
+/*PAGE*/
+div.pages {
+    justify-content: flex-end;
+}
+div.pages a {
+    background-color: #d96c4e;
+    color: white;
+    border-radius: .2rem;
+    padding: .5% .8%;
+    margin-left: 1%;
+    transition: .25s;
+}
+div.pages a:hover {
+    margin-top: -.5%;
+}
+.active {
+    margin-top: -.5%;
+    background-color: brown !important;
 }
 
 /*FOOTER*/
@@ -364,12 +425,18 @@ i.fa-paper-plane {
 }
 
 @media screen and (max-width: 950px) {
+    header {
+        width: 100%;
+    }
+    nav {
+        width: 100%;
+    }
+    .banner {
+       display: none; 
+    }
     h1 {
         font-size: 2vw;
         margin-top: 8vw !important;
-    }
-    #clock {
-        font-size: 50%;
     }
     .item {
         font-size: 70%;
@@ -388,31 +455,88 @@ i.fa-paper-plane {
         width: 80%;
         margin: 30% auto;
     }
-    .bright h3, .bright p {
-        font-size: 120%;
+    main {
+        font-size: 2.5vw !important;
     }
-    .bright input {
-        cursor: pointer;
-        padding: 5% 7%;
-        font-weight: bold;
-        background-color: #ffd6a0;
+    /*LEFT*/
+    main.flex {
+        display: block;
     }
-    .more {
-        padding: 1vw;
-        width: 40%;
-    }
-    .loadWeb > div {
+    div.left {
         width: 100%;
-        margin: 50% auto;
+        margin-bottom: 5%;
     }
+    div.right {
+        width: 100%;
+    }
+    ul.decor {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    div.left li {
+        width: 50% ;
+        box-sizing: border-box;
+    }
+    div.left li:first-child {
+        text-align: center;
+    }
+    div.left li:last-child > a {
+        border-bottom: .1rem solid #ffc88e;
+    }
+    div.left li:first-child::after {
+        display: none;
+    }
+    div.left li:first-child::before {
+display: none;
+    }
+    div.left li:first-child {
+        padding: 4%;
+        width: 100%;
+    }
+
+    /*PAGE*/
+    div.pages {
+        margin-top: 2%;
+    }
+    div.pages a {
+        padding: 2%;
+    }
+    div.pages a:hover {
+        margin-top: -2%;
+    }
+    .active {
+        margin-top: -2%;
+        background-color: brown !important;
+    }
+    /*TIM KIEM*/
+div.find {
+    width: 200px;
+    height: 80%;
+    margin-top: 2%;
+}
+.inform {
+    top: 125%;
+    left: 0;
+    padding: 5% 0;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+}
+#find {
+    transform: translateX(160%);
+}
+}
+/*FILTER*/
+.filter {
+    margin-top: 2%;
+}
+.filter > a {
+    padding: 2%;
 }
 @media screen and (max-width: 450px) {
     body {
         font-size: 4.1vw;
-    }
-    .loadWeb > div {
-        width: 100%;
-        margin: 70% auto;
     }
     /*HEADER*/
     .banner {
@@ -432,26 +556,16 @@ i.fa-paper-plane {
         width: 100%;
         background-color: #fde1d3;
     }
+    main .left > * {
+        font-size: 3vw !important;
+    }
     header {
         width: 100%;
     }
     ul.left > li > a::after {
         display: none;
     }
-    /*ADS*/
-    .ads {
-        flex-wrap: wrap;
-    }
-    .ads > div {
-        width: 100%; 
-    }
-    /*PRODUCTS*/
-    h2 {
-        font-size: 3vw;
-    }
-    main > div > section {
-        flex-wrap: wrap;
-    }
+    /* PRODUCT*/
     .item {
         font-size: 3vw;
     }
@@ -459,9 +573,6 @@ i.fa-paper-plane {
         margin: 1% auto;
         width: 48%;
         flex-direction: column;
-    }
-    div.item:last-child {
-        display: none;
     }
     
     /*FOOTER*/
@@ -548,8 +659,80 @@ i.fa-paper-plane {
     .bright h3, .bright p {
         font-size: 5vw;
     }
-    .more {
-        padding: 1rem 0;
+
+    /*LEFT*/
+    main.flex {
+        display: block;
+    }
+    div.left {
+        width: 100%;
+        margin-bottom: 5%;
+    }
+    div.right {
         width: 100%;
     }
+    ul.decor {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    div.left li {
+        width: 50% ;
+        box-sizing: border-box;
+    }
+    div.left li:first-child {
+        text-align: center;
+    }
+    div.left li:last-child > a {
+        border-bottom: .1rem solid #ffc88e;
+    }
+    div.left li:first-child::before {
+        font-size: 2vw;
+        top: 105%;
+        right: 9%;
+        width: 5%;
+    }
+    div.left li:first-child {
+        padding: 4%;
+        width: 100%;
+    }
+
+    /*PAGE*/
+    div.pages {
+        margin-top: 5%;
+    }
+    div.pages a {
+        padding: 1% 2%;
+    }
+    div.pages a:hover {
+        margin-top: -2%;
+    }
+    .active {
+        margin-top: -2%;
+        background-color: brown !important;
+    }
+    /*TIM KIEM*/
+div.find {
+    width: 200px;
+    height: 80%;
+    margin-top: 2%;
+}
+.inform {
+    top: 125%;
+    left: 0;
+    padding: 5% 0;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+}
+#find {
+    transform: translateX(160%);
+}
+/*FILTER*/
+.filter {
+    margin-top: 2%;
+}
+.filter > a {
+    padding: 2%;
+}
 }
